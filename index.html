@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Model AI Chat</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="w-full max-w-4xl bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-2xl font-bold text-center text-blue-600">Business Model AI Chat</h1>
+        <div id="chat-container" class="mt-4 space-y-4">
+            <!-- Messages will appear here -->
+            <div id="loading-indicator" class="hidden justify-center items-center mt-4">
+                <div class="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+            </div>
+            
+        </div>
+        <div class="mt-6 flex items-center">
+            <textarea
+                id="user-input"
+                rows="2"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                placeholder="Type your business idea or question..."
+            ></textarea>
+            <button
+                id="send-btn"
+                class="ml-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700"
+            >
+                Send
+            </button>
+        </div>
+    </div>
+</body>
+</html>
