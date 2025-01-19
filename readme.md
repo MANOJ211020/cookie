@@ -3,7 +3,9 @@ to run the project run the flask project
 to set up flask
 
 `pip install flask`
+
 `pip install requests`
+
 `pip install flask_cors`
 
 
